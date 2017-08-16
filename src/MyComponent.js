@@ -15,7 +15,10 @@ class MyComponent extends Component {
 
     render() {
         return (
-            <h1>{this.state.name}</h1>
+            <div>
+                <h1>{this.props.data}</h1>
+                <h1>{this.state.name}</h1>
+            </div>
         );
     }
 }
